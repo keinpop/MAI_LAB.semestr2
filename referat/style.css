@@ -1,0 +1,32 @@
+body, html {
+    margin: 0; 
+    padding: 0;
+}
+
+#headder {
+    color: darkred;
+}
+
+.main_text__holdder {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+#main_text {
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 32px;
+    border-radius: 12px;
+    width: 30%;
+    min-width: 220px;
+}
+
+body {
+    background: AntiqueWhite;
+    background: linear-gradient(AntiqueWhite, Azure);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}

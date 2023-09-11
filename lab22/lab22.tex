@@ -1,0 +1,102 @@
+\documentclass[12pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.9}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\pagestyle{empty}
+\usepackage[
+paperheight=300mm,  
+paperwidth=190mm, 
+rmargin=0.9cm,
+margin=1cm, top=0.8cm]{geometry}
+\usepackage{titlesec}
+\begin{document}
+\setlength{\headsep}{0.8cm}
+\title{ГЛАВА 3}
+
+{ \noindent\Large 256 \centerline {\Large\textit{Гл. 2. Предел и непрерывность функции}}}\\
+{\noindent\rule{\textwidth}{1pt}} \\
+\fontsize{18pt}{18pt}
+\selectfont
+\setlength{\parindent}{0.8cm}
+{
+ \indent {\textbf{11.} 1) $\omega(\delta)$ = 2$\delta$ ;\\
+ 2) если $\delta \geqslant a , то \omega(\delta)  = a^{2}$, если  $ 0 < \delta < a$, то $\omega(\delta) = \delta(2a - \delta)$; \\
+ 3) $\omega(\delta) = \delta / a(a + \delta)$; \\
+ 4) если $\delta \geqslant \pi$, то $\omega(\delta) = 2$, если $\delta < \pi$, то $\omega(\delta) = 2 \sin(\delta/2)$; \\
+ 5) $\omega(\delta) = \ln(1 + \delta)$.\\
+ \indent{\textbf{30.}} 1) Например, $y = -(9,1x + 3,1)/6$, если $-1 \leqslant x \leqslant -0,4$; $y = 0,09$, если $|x| < 0,4, y = (9,1x + 3,1)/6$, если $0,4 \leqslant x \leqslant 1$; \\
+ \indent2) Например, $y = 2,45 - 1,5x$, если $2/3 \leqslant x \leqslant 1$, $y = 1,45 - 0,5x$, если $1 \leqslant x \leqslant 2$. \\
+ \indent\textbf{31.} Например, $y = (8 - 3x)/8$, если $0 \leqslant x \leqslant 2$; $y = (100 - x)/392$, если $2 \leqslant x \leqslant 100$.\\
+ \indent\textbf{34.} 1) \textit{f}(x) = -1 + |x + 3| - |x + 1| + |x - 1|; \\
+ 2) \textit{f}(x) = 3/2 + |x + 2| -  (3/2)|x| + |x - 1| - |x - 3|/2; \\
+ 3) \textit{f}(x) = -11/2 + (7|x - 1|)/4 -(15|x - 3|)/4 + 4|x - 4|. 
+
+ \newpage
+ 
+\begin{center}
+    ГЛАВА 3 \\ 
+    \textbf{ПРОИЗВОДНАЯ И ДИФФЕРЕНЦИАЛ}
+
+\end{center}
+    \\\ \\\ \\\ \\\ \\\
+\begin{center}
+    \s\textbf{13. Производная. Формулы и правила вычисления производных. Дифференциал функции}
+\end{center}
+
+\begin{flushleft}
+    \textsc{СПРАВОЧНЫЕ СВЕДЕНИЯ}
+\end{flushleft}
+
+\textbf{1. Определение производной.} Предел отношения
+
+\begin{center}  
+    $\frac{\textit{f}(x_0 + \Delta x) - \textit{f}(x_0)}{\Delta x}$
+\end{center}
+при $\Delta x \rightarrow 0$ называется \textit{производной функции f(x) в точке $x_0$}. Этот предел обозначают одним из слудющих символов:
+\begin{center}
+    $f^\prime(x_0)$,\quad $\frac{{df(x_0)}}{dx}$,\quad $f^\prime|_x=x_0$.
+\end{center}
+Таким образом, 
+\begin{center}
+    $f^\prime(x_0) = \lim\limits_{\Delta x \to 0}\frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$.
+\end{center}
+}
+Если в каждой точке $x \in (a;b)$ существует
+\begin{center}
+    $f^\prime(x_0) = \lim\limits_{\Delta x \to 0}\frac{f(x + \Delta x) - f(x)}{\Delta x}$,
+\end{center}
+т.е. если производная $f^\prime (x)$ существует для всех $x \in (a;b)$, то функция $f$ называется \textit{дифференцируемой на интервале} $(a;b)$. Вычесление производной называют \textit{дифференцированием}.\\
+\indent\textbf{2. Правила вычисления производных, связанные с арифметическими действиями над функциями.} Если функции $f_1,f_2,...,f_n$ имеют производные в некоторой точке, то функция\\
+\indent$f = c_1 f_1 + c_2 f_2 + ... + c_n f_n (c_1 , c_2 , ... , c_n$ - постоянные) \\
+также имеет в этой точке производную, причем
+\begin{center}
+    $f^\prime = c_1 f_1^\prime + c_2 f_2^\prime + ... + c_n f_n^\prime$.
+\end{center}
+\indent Если функции $f_1$ и $f_2$ имеют производные в некоторой точке, то и функция $f = f_1 f_2$ имеет производную в этой точке, причем 
+\begin{center}
+    $f^\prime = f_1 f_2 ^\prime + f_1 ^\prime f_2$
+\end{center}
+
+\indentЕсли функция $f_1$ и $f_2$ имеют производные в некоторой точке и $f_2 \neq 0$ в ней, то функция $f = f_1/f_2$ также имеет производную в этой точке, причем \\ 
+\begin{center}   
+$f^\prime = \frac{f_2 f_1 ^\prime - f_1 f_2 ^\prime}{f_2 ^2}$.
+\end{center}
+
+\newpage
+
+\begin{center}
+    \textbf{Дополнительное задание}\\
+    1. График
+\end{center}
+\begin{tikzpicture}
+\begin{axis}[ 
+	view={110}{10}, 
+	colormap/blackyellow,
+	colorbar 
+]
+\addplot3[surf] {-sin(x^2 + y^2)};
+\end{axis}
+\end{tikzpicture}    
+\end{document}
